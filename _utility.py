@@ -20,7 +20,7 @@ def Ricker(f, x, y, z, x0=0, y0=0, z0=0):
 # -- Simulation Functions --
 def FD(dx, Nx):
     """Finite Difference operator for first derivative. First order accurate. All DBC."""
-    return (1 / dx) * sp.diags([1, -1], [0, -1], shape=(Nx, Nx), format='lil')[:, :-1]
+    return (1 / dx) * sp.diags([-1, 1], [0, -1], shape=(Nx, Nx), format='lil')[:, :-1]
 
 def compute_B(c_model, rho_model, rho_stag_x, rho_stag_y):
     """Compute the material matrices for the 2D acoustic wave equation."""
@@ -171,7 +171,7 @@ def plot_acoustic_2D(phi, Nx, Ny, dx, dy, title='2D Wave Field', subsample=16, s
     plt.figure(figsize=(10, 8))
     
     # Plot the wavefield amplitudes
-    plt.imshow(u, cmap='RdBu', extent=[0, Nx*dx, 0, Ny*dy], clim=clim, origin='upper')
+    plt.imshow(u, cmap='RdBu', extent=[0, Nx*dx, 0, Ny*dy], clim=clim, origin='lower')
     plt.colorbar(label='u field')
     
     # Plot the velocity vectors
@@ -263,7 +263,8 @@ def plot_maxwells_3D(phi, Nx, Ny, Nz, dx, dy, dz,
     plt.show()
 
 def plot_field_3D(state):
-        # Extract dimensions
+    """Plot vector field on spherical grid"""
+    # Extract dimensions
     _, n_theta, n_phi, n_radii = state.shape
 
     # Generate spherical coordinates
