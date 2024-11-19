@@ -1,0 +1,7 @@
+ipython >= 8.27.0 
+ipykernel >= 6.28.0
+matplotlib >= 3.9.0
+plotly >= 5.0
+numpy >= 2.0
+scipy >= 1.14
+qiskit ~= 1.2
