@@ -6,9 +6,9 @@
 [![License](https://img.shields.io/badge/License-GNU-yellow.svg)](https://opensource.org/license/gpl-3-0/)
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-  <img src="E-Figures/3D_state_a.png" width="300">
-  <img src="E-Figures/3D_state_b.png" width="300">
-  <img src="E-Figures/3D_state_c.png" width="300">
+  <img src="E-Figures/3D_state_a.png" width="250">
+  <img src="E-Figures/3D_state_b.png" width="250">
+  <img src="E-Figures/3D_state_c.png" width="250">
 </div>
 > Figure 1: Initialized radially symmetric quantum state. The subplots show vector fields constructed from an initial state in [1,0,0] direction with purely X-, Y-, or Z- vector components.
 
