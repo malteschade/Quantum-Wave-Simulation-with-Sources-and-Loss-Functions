@@ -15,7 +15,7 @@
 ## Overview
 Quantum computers show potential for solving wave based forward and inverse problems with major runtime advantages.
 
-We present numerical implementations for educational purposes together with our publication [Quantum Wave Simulation with Sources and Loss Functions (11/2023)]:
+We present numerical implementations for educational purposes together with our publication [Quantum Wave Simulation with Sources and Loss Functions (11/2024)]:
 
 ### Quantum Encoding:
 1. A **solver for the 2D acoustic wave equation** that utilizes a natural quantum encoding.
