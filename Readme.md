@@ -4,6 +4,8 @@
 
 [![PyPI](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
 [![License](https://img.shields.io/badge/License-GNU-yellow.svg)](https://opensource.org/license/gpl-3-0/)
+[![arXiv](https://img.shields.io/badge/arXiv-2411.17630-blue)](https://arxiv.org/abs/2411.17630)
+[![DOI](https://img.shields.io/badge/DOI-10.48550/arXiv.2411.17630-blue)](https://doi.org/10.48550/arXiv.2411.17630)
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
   <img src="E-Figures/3D_state_a.png" width="250">
@@ -15,7 +17,7 @@
 ## Overview
 Quantum computers show potential for solving wave based forward and inverse problems with major runtime advantages.
 
-We present numerical implementations for educational purposes together with our publication [Quantum Wave Simulation with Sources and Loss Functions (11/2024)]:
+We present numerical implementations for educational purposes together with our publication [Quantum Wave Simulation with Sources and Loss Functions (11/2024)](https://arxiv.org/abs/2411.17630):
 
 ### Quantum Encoding:
 1. A **solver for the 2D acoustic wave equation** that utilizes a natural quantum encoding.
@@ -34,6 +36,15 @@ We present numerical implementations for educational purposes together with our 
 8. A quantum circuit implementation for **efficient vector field initialization** used in **implementing arbitrary source terms**.
 
 Enjoy your quantum wave evolution experiments!
+
+## Citation
+    @article{bösch2024quantum,
+    title={Quantum Wave Simulation with Sources and Loss Functions},
+    author={Cyrill Bösch, Malte Schade, Giacomo Aloisi, and Andreas Fichtner},
+    journal={arXiv preprint arXiv:2411.17630},
+    year={2024},
+    url={https://arxiv.org/abs/2411.17630}, 
+    }
 
 # <p align="center"><img src="E-Figures/circuit_3D.png" width="1000"></p>
 > Figure 2: Quantum circuit for efficient vector field initialization in 3D. The initial ray is prepared in the quantum register $initial$ with vector components saved in the register $dim$. The registers $grid_{2D}$ (and $grid_{3D}$) are transformed into a state of equal superposition. Afterwards (multi-)controlled RY rotations are applied with decreasing angles, which gives the rotationally symmetric vector field in the combined registers.
